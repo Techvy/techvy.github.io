@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    
+    <!-- =============================----CSS-------================================================== -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" type="text/css" href="css/util.css">
+    <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- =============================----Top NavBar-------================================================== -->
+</head>
+<body>
+<!-- Navigation -->
+<nav>
+    <div class="top_navbar">
+        <i class='bx bx-menu sidebarOpen'></i>
+        <span class="top_navbar_logo">
+        </span>
+
+
+        <!-- Sidebar Menu -->
+        <div class="sidebar_menu">
+            <div class="sidebar_logo">
+                <span class="logo">
+                    <a href="#"><img src="images/Blocktune.png" width="60" alt="BlockTune Logo"></a>
+                </span>
+                <div class="sidebar-text">SIDEBAR</div>
+                <i class='bx bx-x siderbarClose'></i>
+            </div>
+            <ul class="top_navbar_links">
+                <li id="top-nav-home" class="active"><a href="#home">Home</a></li>
+                <li id="top-nav-services"><a href="#services">Services</a></li>
+                <li id="top-nav-portfolio"><a href="#portfolio">Portfolio</a></li>
+                <li id="top-nav-contact"><a href="#contact">Contact</a></li>
+            </ul>     
+        </div>
+
+        <!-- Dark/Light Mode Toggle and GitHub Icon -->
+        <div class="darkLight-github">
+
+        </div>
+    </div>
+</nav>
+
+
+    <!-- =============================----Main Content-------================================================== -->
+    <section class="hero-header"><section id="home"></section>
+        <section class="wrapper">
+          <section class="main-container">
+            <section class="hero-pic">
+              <img src="images/main_photo.jpg" alt="Profile Picture">
+            </section>
+            <section class="hero-text">
+              <h5>Hi I'm <span class="typed-input">Skilled Python Developer</span></h5>
+              <h1>Techvy</h1>
+              <p>I'm a Python developer with expertise in building Discord bots using discord.py and discord.js. Skilled in Python, HTML, JavaScript, and various Python libraries, I create dynamic, interactive solutions.</p>
+              <div class="btn-group">
+                <a style="--clr: #7808d0" class="button" href="https://discordapp.com/users/1250413029607084043/">
+                  <span class="button__icon-wrapper">
+                    <svg width="10" class="button__icon-svg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 15">
+                      <path fill="currentColor" d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"></path>
+                    </svg>
+                    <svg class="button__icon-svg button__icon-svg--copy" xmlns="http://www.w3.org/2000/svg" width="10" fill="none" viewBox="0 0 14 15">
+                      <path fill="currentColor" d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"></path>
+                    </svg>
+                  </span>
+                  Hire Me
+                </a>
+              </div>
+              <div class="social">
+                <a href="https://discordapp.com/users/1250413029607084043/"><i class="fa-brands fa-discord"></i></a>
+                <a href="https://github.com/Techvy"><i class='bx bxl-github'></i></a>
+              </div>
+            </section>
+          </section>
+        </section>
+      </section>
+      
+    <!-- =============================----Services Section-------================================================== -->
+
+
+<!-- Section: Services -->
+<div class="scroll-offset-services" id="services"></div>
+<section class="services section">
+    <h2 class="services-title">Services</h2>
+
+    <!-- Container for services -->
+    <div class="services-container" data-tilt>
+        <div class="service service-1" data-tilt>
+            <img src="images/web-development.png" alt="Web Development Logo" class="service-logo">
+            <h3 class="service-title">Bot development</h3>
+            <p class="service-description">
+                I'm a bot developer skilled in Python and Javascript. I specialize in creating efficient, scalable bots using discord.py and Javascript's robust frameworks, delivering dynamic, high-performance solutions for various platforms.
+            </p>
+        </div>
+        <div class="service service-2" data-tilt>
+            <img src="images/app-development.png" alt="App Development Logo" class="service-logo">
+            <h3 class="service-title">Discord server management</h3>
+            <p class="service-description">
+                I'm experienced in server management, proficient in handling Python and Java-based servers. I specialize in deploying, optimizing, and maintaining scalable, secure environments to ensure smooth performance and efficient resource management.
+            </p>
+        </div>
+        <div class="service service-3" data-tilt>
+            <img src="images/development.png" alt="Software Development Logo" class="service-logo">
+            <h3 class="service-title">Discord custom tools development</h3>
+            <p class="service-description">
+                I'm a developer specializing in custom Discord tools. Using Python and JavaScript, I create tailored bots and integrations, enhancing server functionality with unique, automated features for streamlined community management.
+            </p>
+        </div>
+    </div>
+
+    <!-- Learn More Button -->
+    <div class="learn-more-container">
+        <a href="YOUR_LINK_HERE" class="btn-learn_more">
+            Learn More
+            <div class="arrow-wrapper">
+                <div class="arrow"></div>
+            </div>
+        </a>
+    </div>    
+    </div>
+</section>
+    <!-- =============================----Skills Section-------================================================== -->
+<!-- Section: Skills -->
+<div class="scroll-offset-skills" id="skills"></div>
+<section class="skills section">
+    <h2 class="skills-title">Skills</h2>
+    <div class="skills__container">
+        <div>
+            <h2 class="skills__subtitle">Professional Skills</h2>
+            <div class="skills__data">
+                <div class="skills__names">
+                    <i class='bx bxl-html5 skills__icon'></i>
+                    <span class="skills__name">PYTHON</span>
+                </div>
+                <div class="skills__bar-container">
+                    <div class="skills__bar skills__html"></div>
+                </div>
+                <div>
+                    <span class="skills__percentage" data-percentage="95">0%</span>
+                </div>
+            </div>
+            <div class="skills__data">
+                <div class="skills__names">
+                    <i class='bx bxl-css3 skills__icon'></i>
+                    <span class="skills__name">JAVASCRIPT</span>
+                </div>
+                <div class="skills__bar-container">
+                    <div class="skills__bar skills__css"></div>
+                </div>
+                <div>
+                    <span class="skills__percentage" data-percentage="85">0%</span>
+                </div>
+            </div>
+            <div class="skills__data">
+                <div class="skills__names">
+                    <i class='bx bxl-javascript skills__icon'></i>
+                    <span class="skills__name">HTML5</span>
+                </div>
+                <div class="skills__bar-container">
+                    <div class="skills__bar skills__js"></div>
+                </div>
+                <div>
+                    <span class="skills__percentage" data-percentage="45">0%</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section: Qualifications -->
+        <div class="parent-container">
+            <section class="qualifications-section">
+                <h2 class="qualifications-title">My Qualifications</h2>
+                <div class="qualifications-description-box" data-tilt>
+                    <p class="qualifications-description">
+                        I have 3 years of experience in Python, 2 years in JavaScript, and 7 months in HTML. Continuously learning and evolving, I’m dedicated to expanding my expertise and delivering quality solutions.                    </p>
+                </div>
+            </section>
+        </div>
+    </div>
+</section>
+
+        <!-- =============================----Portfolio Section-------================================================== -->
+<!-- Section: Portfolio -->
+<div class="scroll-offset-portfolio" id="portfolio"></div>
+<div class="portfolio-section">
+    <h2 class="portfolio-title">Portfolio</h2>
+    <div class="portfolio-container">
+        <div class="portfolio-item">
+            <img src="https://media.discordapp.net/attachments/1260095955294752799/1287432934302683286/image.png?ex=66f186da&is=66f0355a&hm=43101b5e13555fac11a4d3e4bff75aab67b09a3d89e5408546e50af188f506d4&=&format=webp&quality=lossless" alt="Work 1">
+            <div class="overlay">
+                <a href="https://builtbybit.com/resources/multi-purpose-discord-bot.48981/" class="view-button">
+                    <div class="arrow-wrapper">
+                        <div class="arrow"></div>
+                    </div>
+                    View
+                </a>
+            </div>
+        </div>
+        <div class="portfolio-item">
+            <img src="https://media.discordapp.net/attachments/1260584707729395732/1268119731781767168/vanillamc_banner.png?ex=66f12388&is=66efd208&hm=efde031fe8e7135624ca7ed828cba75050ddc428137d5c6988484a01b4cae47d&=&format=webp&quality=lossless&width=400&height=204" alt="Work 2">
+            <div class="overlay">
+                <a href="https://discord.gg/G7wVFPvv" class="view-button">
+                    <div class="arrow-wrapper">
+                        <div class="arrow"></div>
+                    </div>
+                    View
+                </a>
+            </div>
+        </div>
+        <div class="portfolio-item">
+            <img src="https://images-ext-1.discordapp.net/external/IjKb73RErHqjaV5w14VS1y8yZAQiloG3vnEBB1dY31I/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/1272921861272899605/a012e44d3e3bfae51ffc9088a35cd2c7.png?format=webp&quality=lossless&width=423&height=423" alt="Work 3">
+            <div class="overlay">
+                <a href="https://discord.gg/N4nmSMpV" class="view-button">
+                    <div class="arrow-wrapper">
+                        <div class="arrow"></div>
+                    </div>
+                    View
+                </a>
+            </div>
+        </div>
+</div>
+
+
+
+     <!-- =============================----Contact Section-------================================================== -->     
+<!-- Section: Contact -->
+
+<!-- =============================----Footer Section-------================================================== -->
+<footer class="sticky-footer">
+    <div class="footer-content">
+        <div class="footer-left">
+            <div class="footer-logo-section">
+                <img src="" alt="" class="footer-logo">
+                <p>© 2024 Techvy.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- =============================----JavaScript Section-------================================================== -->
+
+<script>
+    const body = document.querySelector("body"),
+          nav = document.querySelector("nav"),
+          modeToggle = document.querySelector(".dark-light"),
+          sidebarOpen = document.querySelector(".sidebarOpen"),
+          sidebarClose = document.querySelector(".sidebarClose");
+
+    // Load the user's preferred mode from localStorage
+    let getMode = localStorage.getItem("mode");
+    if (getMode && getMode === "dark-mode") {
+        body.classList.add("dark");
+    }
+
+    // Toggle dark/light mode
+    modeToggle.addEventListener("click", () => {
+        modeToggle.classList.toggle("active");
+        body.classList.toggle("dark");
+
+        // Save the user's selected mode
+        if (!body.classList.contains("dark")) {
+            localStorage.setItem("mode", "light-mode");
+        } else {
+            localStorage.setItem("mode", "dark-mode");
+        }
+    });
+
+    // Open the sidebar
+    sidebarOpen.addEventListener("click", () => {
+        nav.classList.add("active");
+    });
+
+    // Close the sidebar when clicking outside of it
+    body.addEventListener("click", e => {
+        let clickedElm = e.target;
+        if (!clickedElm.classList.contains("sidebarOpen") && !clickedElm.classList.contains("menu")) {
+            nav.classList.remove("active");
+        }
+    });
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js" defer></script>
+
+<script>
+    function scrollToSection(id) {
+        const element = document.getElementById(id);
+        const headerOffset = 100; // Adjust based on your header height
+        const elementPosition = element.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - headerOffset + 50; // Adjust the extra offset (50px) as needed
+
+        window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+        });
+    }
+
+    document.getElementById('scroll-to-services').addEventListener('click', function() {
+        scrollToSection('services');
+    });
+
+    document.getElementById('scroll-to-contact').addEventListener('click', function() {
+        scrollToSection('contact');
+    });
+    
+</script>
+<!-- Place your script tag at the end of the body or use DOMContentLoaded -->
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var typed = new Typed(".typed-input", {
+            strings: ["", "Discord Bot Developer", "Discord Custom Tools Developer", ""],
+            typeSpeed: 70,
+            backSpeed: 55,
+            backDelay: 1000, // Delay before starting to backspace
+            startDelay: 500, // Delay before starting the typing effect
+            loop: true,
+            showCursor: true,
+            cursorChar: '|', // Customize cursor character
+            smartBackspace: true, // Only backspace the current string
+        });
+    });
+</script>
+
+<script src="js/script.js" defer></script>
+<script src="js/app.js" defer></script>
+<script src="js/scroll.js" defer></script>
+<script src="js/vanilla-tilt.js" defer></script>
+</body>
+</html>
