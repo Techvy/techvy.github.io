@@ -5,8 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    
-    <!-- =============================----CSS-------================================================== -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/styles.css">
@@ -17,13 +15,8 @@
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
-    <!-- =============================----Top NavBar-------================================================== -->
 </head>
 <body class="dark">
-    <!-- Navigation -->
-
-
-        <!-- Sidebar Menu -->
         <div class="sidebar_menu">
             <div class="sidebar_logo">
                 <span class="logo">
@@ -34,16 +27,11 @@
             </div>
    
         </div>
-
-        <!-- Dark/Light Mode Toggle and GitHub Icon -->
         <div class="darkLight-github">
 
         </div>
     </div>
 </nav>
-
-
-    <!-- =============================----Main Content-------================================================== -->
     <section class="hero-header"><section id="home"></section>
         <section class="wrapper">
           <section class="main-container">
@@ -77,16 +65,9 @@
           </section>
         </section>
       </section>
-      
-    <!-- =============================----Services Section-------================================================== -->
-
-
-<!-- Section: Services -->
 <div class="scroll-offset-services" id="services"></div>
 <section class="services section">
     <h2 class="services-title">Services</h2>
-
-    <!-- Container for services -->
     <div class="services-container" data-tilt>
         <div class="service service-1" data-tilt>
             <img src="images/web-development.png" alt="Web Development Logo" class="service-logo">
@@ -112,8 +93,6 @@
     </div>
 
 </section>
-    <!-- =============================----Skills Section-------================================================== -->
-<!-- Section: Skills -->
 <div class="scroll-offset-skills" id="skills"></div>
 <section class="skills section">
     <h2 class="skills-title">Skills</h2>
@@ -158,7 +137,6 @@
             </div>
         </div>
 
-        <!-- Section: Qualifications -->
         <div class="parent-container">
             <section class="qualifications-section">
                 <h2 class="qualifications-title">My Qualifications</h2>
@@ -182,18 +160,15 @@
           sidebarOpen = document.querySelector(".sidebarOpen"),
           sidebarClose = document.querySelector(".sidebarClose");
 
-    // Load the user's preferred mode from localStorage
     let getMode = localStorage.getItem("mode");
     if (getMode && getMode === "dark-mode") {
         body.classList.add("dark");
     }
 
-    // Toggle dark/light mode
     modeToggle.addEventListener("click", () => {
         modeToggle.classList.toggle("active");
         body.classList.toggle("dark");
 
-        // Save the user's selected mode
         if (!body.classList.contains("dark")) {
             localStorage.setItem("mode", "light-mode");
         } else {
@@ -201,12 +176,10 @@
         }
     });
 
-    // Open the sidebar
     sidebarOpen.addEventListener("click", () => {
         nav.classList.add("active");
     });
 
-    // Close the sidebar when clicking outside of it
     body.addEventListener("click", e => {
         let clickedElm = e.target;
         if (!clickedElm.classList.contains("sidebarOpen") && !clickedElm.classList.contains("menu")) {
@@ -220,9 +193,9 @@
 <script>
     function scrollToSection(id) {
         const element = document.getElementById(id);
-        const headerOffset = 100; // Adjust based on your header height
+        const headerOffset = 100;
         const elementPosition = element.getBoundingClientRect().top;
-        const offsetPosition = elementPosition + window.pageYOffset - headerOffset + 50; // Adjust the extra offset (50px) as needed
+        const offsetPosition = elementPosition + window.pageYOffset - headerOffset + 50;
 
         window.scrollTo({
             top: offsetPosition,
@@ -239,19 +212,18 @@
     });
     
 </script>
-<!-- Place your script tag at the end of the body or use DOMContentLoaded -->
 <script>
     document.addEventListener("DOMContentLoaded", function() {
         var typed = new Typed(".typed-input", {
             strings: ["", "Web Designer", "Software Developer", ""],
             typeSpeed: 90,
             backSpeed: 80,
-            backDelay: 1000, // Delay before starting to backspace
-            startDelay: 500, // Delay before starting the typing effect
+            backDelay: 1000,
+            startDelay: 500, 
             loop: true,
             showCursor: true,
-            cursorChar: '|', // Customize cursor character
-            smartBackspace: true, // Only backspace the current string
+            cursorChar: '|',
+            smartBackspace: true,
         });
     });
 </script>
