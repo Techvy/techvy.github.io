@@ -1,9 +1,6 @@
-/* ===== Google Font Import - Poppins ===== */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
-
-/* Font declarations */
 @font-face {
     font-family: 'Gilroy-Light';
     src: url('../fonts/Gilroy-Light.ttf') format('truetype');
@@ -51,8 +48,6 @@
     src: url('../fonts/SegoeTVBold.TTF');
     font-display: swap;
 }
-
-/* Reset & Base Styles */
 * {
     margin: 0;
     padding: 0;
@@ -70,19 +65,13 @@ body {
     transition: background-color 0.4s ease, color 0.4s ease;
 }
 
-/* ============================= Enhanced Color System ================================== */
 :root {
-    /* Main Colors */
     --primary: #BF40BF;
     --primary-hover: #9E2A9E;
     --primary-light: #D67FD6;
     --primary-dark: #7F2B7F;
-    
-    /* Accent Colors */
     --accent: #40BFBF;
     --accent-hover: #2A9E9E;
-    
-    /* Light Theme Colors */
     --bg-light: #f8f8f8;
     --surface-light: #ffffff;
     --text-primary-light: #222222;
@@ -90,8 +79,6 @@ body {
     --border-light: #e0e0e0;
     --shadow-light: rgba(0, 0, 0, 0.1);
     --shadow-strong-light: rgba(0, 0, 0, 0.18);
-    
-    /* Dark Theme Colors */
     --bg-dark: #18191A;
     --surface-dark: #242526;
     --surface-dark-hover: #3A3B3C;
@@ -100,8 +87,6 @@ body {
     --border-dark: #3E4042;
     --shadow-dark: rgba(0, 0, 0, 0.3);
     --shadow-strong-dark: rgba(0, 0, 0, 0.5);
-    
-    /* Current Theme (defaults to light) */
     --body-color: var(--bg-light);
     --nav-color: var(--surface-light);
     --side-nav: var(--surface-light);
@@ -110,17 +95,12 @@ body {
     --border-color: var(--border-light);
     --shadow: var(--shadow-light);
     --shadow-strong: var(--shadow-strong-light);
-    
-    /* Button Colors */
     --button-bg: var(--primary);
     --button-hover-bg: var(--primary-hover);
     --button-icon-color: var(--primary);
-    
-    /* Other UI Elements */
+
     --image-border: #555;
     --image-shadow: var(--shadow-strong);
-    
-    /* Animation Speeds */
     --transition-fast: 0.2s;
     --transition-normal: 0.3s;
     --transition-slow: 0.5s;
@@ -142,7 +122,6 @@ body {
     --shadow-strong: var(--shadow-strong-dark);
 }
 
-/* ============================= Typography Improvements ================================== */
 h1, h2, h3, h4, h5, h6 {
     line-height: 1.2;
     margin-bottom: 0.5em;
@@ -166,7 +145,6 @@ p {
     margin-bottom: 1rem;
 }
 
-/* ============================= Enhanced Navigation ================================== */
 nav {
     position: fixed;
     top: 0;
@@ -273,8 +251,6 @@ nav .top_navbar .top_navbar_logo a:hover {
 .top_navbar_links li a:hover::after {
     width: 70%;
 }
-
-/* Dark Mode Toggle & GitHub Icon */
 .darkLight-github {
     display: flex;
     align-items: center;
@@ -356,7 +332,6 @@ nav .top_navbar .top_navbar_logo a:hover {
     display: block;
 }
 
-/* ============================= Enhanced Hero Section ================================== */
 .wrapper {
     width: 1280px;
     max-width: 95%;
@@ -391,8 +366,6 @@ header {
         transform: translateY(0);
     }
 }
-
-/* Improved Hero Image */
 .main-container .hero-pic {
     width: 300px;
     height: 300px;
@@ -421,7 +394,6 @@ header {
     transform: scale(1.1);
 }
 
-/* Hero Text Section */
 .hero-text {
     max-width: 500px;
     display: flex;
@@ -460,8 +432,6 @@ header {
     animation: fadeInUp 0.8s ease-in-out forwards;
     animation-delay: 0.6s;
 }
-
-/* Enhanced Button Group */
 .btn-group {
     margin: 45px 0;
     opacity: 0;
@@ -535,7 +505,6 @@ header {
     transform: translate(0);
 }
 
-/* Enhanced Social Icons */
 .social i {
     color: var(--text-color);
     font-size: 20px;
@@ -554,14 +523,12 @@ header {
     box-shadow: 0 5px 15px var(--shadow);
 }
 
-/* ============================= Enhanced Services Section ================================== */
 .scroll-offset-services {
     position: relative;
     top: 200px;
     height: 50px;
 }
 
-/* Services Title */
 .services-title {
     text-align: center;
     font-size: clamp(2rem, 3vw, 2.5rem);
@@ -587,7 +554,6 @@ header {
     width: 180px;
 }
 
-/* Services Container */
 .services-container {
     display: flex;
     flex-wrap: wrap;
@@ -602,8 +568,6 @@ header {
     animation: fadeInUp 0.8s ease-in-out forwards;
     animation-delay: 0.5s;
 }
-
-/* Enhanced Service Card */
 .service {
     background-color: var(--surface-light);
     border: 1px solid var(--border-color);
@@ -653,7 +617,6 @@ header {
     box-shadow: 0 15px 30px var(--shadow-strong);
 }
 
-/* Service Logo */
 .service-logo {
     width: 70px;
     height: 70px;
@@ -664,8 +627,6 @@ header {
 .service:hover .service-logo {
     transform: scale(1.1);
 }
-
-/* Service Title */
 .service-title {
     font-size: 1.3em;
     margin: 15px 0;
@@ -677,100 +638,15 @@ header {
     color: var(--primary-light);
 }
 
-/* Service Description */
 .service-description {
     font-size: 0.95em;
     color: var(--text-secondary);
     line-height: 1.6;
 }
 
-/* Learn More Button Container */
-.learn-more-container {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    bottom: -300px;
-    opacity: 0;
-    animation: fadeInUp 0.8s ease-in-out forwards;
-    animation-delay: 0.8s;
-    margin: 40px 0;
-}
 
-/* Enhanced Learn More Button */
-.btn-learn_more {
-    --primary-color: var(--primary);
-    --secondary-color: #fff;
-    --hover-color: var(--primary-hover);
-    --arrow-width: 10px;
-    --arrow-stroke: 2px;
-    border: 0;
-    border-radius: 30px;
-    color: var(--secondary-color);
-    padding: 1em 1.8em;
-    background: var(--primary-color);
-    display: flex;
-    align-items: center;
-    gap: 0.6em;
-    font-weight: 600;
-    cursor: pointer;
-    text-decoration: none;
-    transition: all var(--transition-normal);
-    box-shadow: 0 4px 15px rgba(191, 64, 191, 0.3);
-}
 
-.btn-learn_more .arrow-wrapper {
-    display: flex;
-    align-items: center;
-    transition: transform var(--transition-normal);
-}
 
-.btn-learn_more .arrow {
-    margin-top: 1px;
-    width: var(--arrow-width);
-    height: var(--arrow-stroke);
-    background: var(--secondary-color);
-    position: relative;
-    transition: width var(--transition-normal);
-}
-
-.btn-learn_more .arrow::before {
-    content: "";
-    position: absolute;
-    border: solid var(--secondary-color);
-    border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
-    top: -3px;
-    right: 3px;
-    padding: 3px;
-    transform: rotate(-45deg);
-    transition: right var(--transition-normal);
-}
-
-.btn-learn_more:hover {
-    background-color: var(--hover-color);
-    box-shadow: 0 6px 20px rgba(191, 64, 191, 0.4);
-    transform: translateY(-3px);
-}
-
-.btn-learn_more:hover .arrow-wrapper {
-    transform: translateX(5px);
-}
-
-.btn-learn_more:hover .arrow {
-    width: calc(var(--arrow-width) + 5px);
-}
-
-.btn-learn_more:hover .arrow::before {
-    right: 0;
-}
-
-.btn-learn_more:active {
-    transform: translateY(1px);
-    box-shadow: 0 2px 10px rgba(191, 64, 191, 0.3);
-}
-
-/* ============================= Enhanced Skills Section ================================== */
 .skills-title {
     position: relative;
     bottom: -400px;
@@ -832,7 +708,6 @@ header {
     width: 90%;
 }
 
-/* Enhanced Skill Data Box */
 .skills__data {
     display: flex;
     position: relative;
@@ -955,7 +830,6 @@ header {
     left: -700px;
 }
 
-/* Enhanced Qualifications Section */
 .qualifications-title {
     position: relative;
     margin-bottom: 45px;
@@ -987,9 +861,9 @@ header {
     max-width: 500px;
     margin: 0 auto;
     color: #333;
-    border-radius: 20px; /* Rounds the corners of the box */
-    padding: 1em; /* Optional: Adds padding inside the box */
-    background: #fff; /* Optional: Adds a background color to make the shadow more visible */
+    border-radius: 20px;
+    padding: 1em; 
+    background: #fff; 
 }
 
 .dark .qualifications-description {
@@ -997,13 +871,7 @@ header {
     color: #CCC;
 }
 
-/* ============================= Mobile Section ================================== */
-
-/* ============================= Enhanced Mobile & Responsive Styles ================================== */
-
-/* Large Screens (Laptops & Desktops) */
 @media (max-width: 1350px) {
-    /* Navigation adjustments */
     nav .top_navbar .sidebarOpen {
         display: block;
     }
@@ -1054,17 +922,13 @@ header {
         margin-top: 20px;
     }
 
-    /* Titles section adjustments */
     .services-title, 
     .skills-title, 
     .portfolio-title {
         display: block;
     }
 }
-
-/* Medium-Large Screens */
 @media (max-width: 1320px) {
-    /* Skills section adjustments */
     .skills__container {
         position: relative;
         bottom: -1000px;
@@ -1073,14 +937,11 @@ header {
         align-items: center;
     }
 
-    /* Contact section adjustments */
     .contact-section {
         position: relative;
         bottom: -500px;
         margin-bottom: 500px;
     }
-
-    /* Parent container adjustments */
     .parent-container {
         display: flex; 
         justify-content: center;
@@ -1090,7 +951,6 @@ header {
         left: auto;
     }
 
-    /* Portfolio section adjustments */
     .portfolio-section {
         position: relative;
         top: 400px;
@@ -1099,7 +959,6 @@ header {
     }
 }
 
-/* Medium Screens (Tablets & Small Laptops) */
 @media (max-width: 1200px) {
     .wrapper {
         width: 100%;
