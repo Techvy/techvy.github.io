@@ -369,11 +369,10 @@ header {
 .main-container .hero-pic {
     width: 300px;
     height: 300px;
-    border-radius: 50%;
     overflow: hidden;
     border: 2px;
     border-radius: 50%;
-    box-shadow: 0 0 10px rgba(255, 251, 255, 0.2);
+    box-shadow: 0 0 10px rgba(26, 1, 105, 0.2);
     animation: fadeInUp 0.8s ease-in-out forwards;
     transition: transform var(--transition-slow), box-shadow var(--transition-normal);
 }
@@ -871,6 +870,12 @@ header {
     color: #CCC;
 }
 
+
+
+
+
+
+
 @media (max-width: 1350px) {
     nav .top_navbar .sidebarOpen {
         display: block;
@@ -885,7 +890,8 @@ header {
         padding: 20px;
         background-color: var(--side-nav);
         z-index: 100;
-        transition: all 0.4s ease;
+        transition: all 0.3s ease-in-out;
+        box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
     }
 
     nav.active .sidebar_menu {
@@ -908,6 +914,7 @@ header {
         color: var(--text-color);
         font-size: 24px;
         cursor: pointer;
+        padding: 8px;
     }
 
     .top_navbar .top_navbar_links {
@@ -919,7 +926,8 @@ header {
 
     .top_navbar_links li a {
         display: block;
-        margin-top: 20px;
+        margin-top: 15px;
+        padding: 12px 15px;
     }
 
     .services-title, 
@@ -928,40 +936,40 @@ header {
         display: block;
     }
 }
+
 @media (max-width: 1320px) {
     .skills__container {
-        position: relative;
-        bottom: -1000px;
-        left: auto;
+        position: static;
+        margin-top: 50px;
+        margin-bottom: 50px;
         flex-direction: column;
         align-items: center;
     }
 
     .contact-section {
-        position: relative;
-        bottom: -500px;
-        margin-bottom: 500px;
+        position: static;
+        margin: 60px auto;
     }
+    
     .parent-container {
         display: flex; 
         justify-content: center;
         align-items: center; 
-        position: relative; 
-        top: -1250px;
-        left: auto;
+        position: static;
+        margin: 60px auto;
     }
 
     .portfolio-section {
-        position: relative;
-        top: 400px;
+        position: static;
+        margin: 60px auto;
         align-items: center;
-        margin-bottom: 30px;
     }
 }
 
 @media (max-width: 1200px) {
     .wrapper {
         width: 100%;
+        overflow-x: hidden;
     }
 }
 
@@ -984,32 +992,42 @@ header {
     /* Hero section adjustments */
     .main-container {
         flex-direction: column;
-        bottom: -50px;
+        bottom: 0;
+        margin: 40px auto;
     }
     
     .hero-text {
         position: relative;
-        bottom: -80px;
+        bottom: 0;
+        padding: 30px 20px;
     }
     
     .hero-pic {
         width: 200px;
         height: 200px;
+        transition: all 0.3s ease;
     }
     
     .hero-text h1 {
         font-size: 2.5rem;
         position: relative;
+        line-height: 1.3;
     }
     
     .hero-text p {
         font-size: 18px;
+        line-height: 1.6;
+    }
+    
+    section {
+        padding: 50px 30px;
     }
 }
 
 @media (max-width: 850px) {
     .service {
         flex: 1 1 calc(45% - 40px);
+        margin-bottom: 20px;
     }
 }
 
@@ -1019,33 +1037,70 @@ header {
         margin-top: 20px;
         margin-bottom: 60px;
         grid-template-columns: 1fr;
+        gap: 30px;
     }
 
     .contact-section {
         padding: 40px;
-        position: relative;
-        top: 300px;
-        margin-bottom: 200px;
+        margin-bottom: 60px;
     }
 
     .form {
         width: 95%;
     }
+    
+    .hero-pic {
+        width: 180px;
+        height: 180px;
+    }
 }
 
 @media (max-width: 600px) {
+    body {
+        font-size: 15px;
+    }
+    
+    h2 {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+    }
+    
+    p {
+        line-height: 1.5;
+    }
+    
+    section {
+        padding: 40px 15px;
+    }
+    
     .service {
         flex: 1 1 calc(100% - 40px);
+        padding: 25px;
     }
 
     .hero-text {
-        padding: 20px 10px;
+        padding: 20px 15px;
         position: relative;
         bottom: 0;
     }
+    
+    .hero-text h1 {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+    
+    .hero-text h5 {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+    
+    .hero-text p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
 
     .skills__container {
-        margin: 0 auto;
+        margin: 40px auto;
         padding-bottom: 60px;
     }
 
@@ -1053,26 +1108,36 @@ header {
         padding: 0 20px;
         margin-top: 20px;
         margin-bottom: 60px;
+        grid-template-columns: 1fr;
+        gap: 20px;
     }
 
     .contact-section {
-        padding: 20px;
-        position: relative;
-        top: 0;
-        margin-bottom: 200px;
+        padding: 30px 20px;
+        position: static;
+        margin: 40px auto;
     }
 
     .form {
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
+    }
+    
+    .form input, 
+    .form textarea, 
+    .form button {
+        width: 100%;
+        font-size: 16px;
+        padding: 12px;
     }
 
     .portfolio-item {
         height: auto;
+        min-height: 200px;
     }
 
     .portfolio-title {
-        margin-bottom: 40px;
+        margin-bottom: 30px;
         top: 0;
     }
 
@@ -1084,47 +1149,78 @@ header {
     .sidebar_menu {
         width: 100%;
         left: -100%;
-        transition: all 0.4s ease;
+        transition: all 0.3s ease-in-out;
     }
 
     nav.active .sidebar_menu {
         left: 0;
+    }
+    
+    img, video {
+        max-width: 100%;
+        height: auto;
     }
 }
 
 @media (max-width: 525px) {
     .skills__data {
         max-width: 350px;
+        margin: 0 auto;
     }
 
     .skills-title {
-        margin-bottom: 120px;
+        margin-bottom: 40px;
+        text-align: center;
     }
 
     .portfolio-title {
-        margin-bottom: 80px;
-        position: relative;
-        top: -300px;
+        margin-bottom: 30px;
+        position: static;
+        text-align: center;
     }
 
     .qualifications-description {
-        max-width: 390px;
+        max-width: 100%;
+        padding: 0 15px;
     }
 }
 
 @media (max-width: 480px) {
     .portfolio-item {
-        height: 250px;
+        height: 230px;
+    }
+    
+    .wrapper {
+        overflow-x: hidden;
+    }
+    
+    body {
+        font-size: 15px;
+    }
+    
+    h2 {
+        font-size: 1.6rem;
+    }
+    
+    .button {
+        padding: 0.8rem 1.4rem;
+        font-size: 0.9rem;
+        width: 100%;
+        text-align: center;
+        margin: 10px 0;
     }
 }
+
 @media (max-width: 450px) {
     .darkLight-github {
-        gap: 2px;
+        gap: 8px;
     }
+    
     .button {
         padding: 0.8rem 1.4rem;
         font-size: 0.9rem;
     }
+    
     .social i {
         margin-right: 10px;
         font-size: 18px;
@@ -1133,11 +1229,13 @@ header {
     .service {
         padding: 20px;
     }
+    
     nav .top_navbar {
         padding: 0 15px;
     }
+    
     .hero-text h1 {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
     
     .hero-text h5 {
@@ -1146,5 +1244,10 @@ header {
     
     .hero-text p {
         font-size: 15px;
+    }
+    
+    .hero-pic {
+        width: 160px;
+        height: 160px;
     }
 }
